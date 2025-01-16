@@ -81,7 +81,7 @@ The following JSON illustrates the tracking data created and managed by the Redd
     "index": 1
 }
 ```
-## Example
+## Video Output Example
 [Video](TikTokVid3.mp4)
 ## Improvements
 - Create a real user interface using Tkinter or html/css
