@@ -3,7 +3,7 @@ import os
 
 
 def initialize_data():
-    base_directory = r'C:/Users/Joseph/Documents/vscode/Reddit Project/Reddit Request'
+    base_directory = r'C:/Users/FakeUser/Documents'
 
     try:
         # Attempt to open the file and read it as JSON
