@@ -138,4 +138,4 @@ class AudioProcessing:
         self.srt_convert(export_file_pathTranscript)
 
 if __name__ == "__main__":
-    AudioProcessing(r'C:/Users/Joseph/Documents/vscode/Reddit Project/Reddit Request/RedditMakerData.json').run_AudioProcessing()
+    AudioProcessing(r'C:/Users/FakeUser/Documents').run_AudioProcessing()
