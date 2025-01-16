@@ -183,7 +183,7 @@ class TikTokGenerator:
         self.move_tiktok()
 
 if __name__ == "__main__":
-    TikTokGenerator(r'C:/Users/Joseph/Documents/vscode/Reddit Project/Reddit Request/RedditMakerData.json').create_tiktok()
+#use case    TikTokGenerator(r'C:/Users/FakeUser/Documents/').create_tiktok()
 
 
 
