@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Dynamic Text Resizing
+  </title>
+  <link href="CommentFrame.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="post-container">
+   <div class="profile-header">
+    <img alt="Profile Picture" src="Thread Explorer.png"/>
+    <div class="username">
+     @ThreadExplorer
+     <img alt="Verified" class="verified" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"/>
+    </div>
+    <div class="audio-icon">
+     <svg fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 19V6l12 6-12 7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      </path>
+     </svg>
+     Playing
+    </div>
+   </div>
+   <div class="caption" id="caption">
+    AITA if I cancel my friend's family vacation reservation because her brother's girlfriend harassed me
+   </div>
+   <div class="footer">
+    <div class="stats">
+     ❤️ 599+  💬 599+
+    </div>
+    <div class="views">
+     👁️ 999,999
+    </div>
+   </div>
+  </div>
+  <script>
+   function adjustTextSize() {
+            const caption = document.getElementById("caption");
+            const maxFontSize = 24; // Maximum font size in px
+            const minFontSize = 8;  // Minimum font size in px
+            let fontSize = maxFontSize;
+
+            caption.style.fontSize = fontSize + "px";
+
+            while ((caption.scrollHeight > caption.clientHeight || caption.scrollWidth > caption.clientWidth) && fontSize > minFontSize) {
+                fontSize -= 1;
+                caption.style.fontSize = fontSize + "px";
+            }
+        }
+
+        // Initial adjustment
+        adjustTextSize();
+
+        // Optional: Adjust text size dynamically when window resizes
+        window.addEventListener("resize", adjustTextSize);
+  </script>
+ </body>
+</html>
