@@ -168,4 +168,4 @@ class RedditAPIClient:
                 print("Invalid input. Please enter 'Yes', 'No', or 'Wait'.")
 
 if __name__ == "__main__":
-    RedditAPIClient(r'C:/Users/Joseph/Documents/vscode/Reddit Project/Reddit Request/RedditMakerData.json').run_RedditRequest()
+    RedditAPIClient(r'C:/Users/FakeUser/Documents').run_RedditRequest()
