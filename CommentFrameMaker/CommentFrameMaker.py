@@ -65,4 +65,4 @@ class CommentFrameMaker:
 
 
 if __name__ == "__main__":
-    CommentFrameMaker(r'C:/Users/Joseph/Documents/vscode/Reddit Project/Reddit Request/RedditMakerData.json').createCommentFrame()
+    CommentFrameMaker(r'C:/Users/FakeUser/Documents').createCommentFrame()
